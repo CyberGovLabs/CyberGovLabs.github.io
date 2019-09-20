@@ -153,18 +153,14 @@ h1, h2, h3, h4, h5, h6 {
 		    @include opacity(0.8);
 	    }
 	}
-
 	
-	
-	.nav-link {
+	.nav-link { 
 		color: $theme-text-color-secondary;
 		font-weight: 500;
 	}
-	
-	.active {
-		.nav-link {
-			color: $theme-text-color-primary;
-		}
+
+	.nav-link.active{
+		color: $theme-color-primary;
 	}
 	
 	.dropdown-menu {
