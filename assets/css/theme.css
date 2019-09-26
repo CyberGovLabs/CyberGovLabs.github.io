@@ -9793,7 +9793,7 @@ h1, h2, h3, h4, h5, h6 {
   top: -6px;
 }
 .site-logo .navbar-brand {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   padding-top: 0;
 }
@@ -9911,7 +9911,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-section .figure-holder {
-  background: url("../images/hero-figure-krisna.jpg") no-repeat right top;
+  background: url("../images/hero-figure-sso.jpg") no-repeat right top;
   background-size: 480px auto;
   min-height: 600px;
 }
@@ -10086,6 +10086,76 @@ h1, h2, h3, h4, h5, h6 {
   .flipster__button--next {
     right: -2rem;
   }
+}
+.nova-accordion .card-title {
+  font-size: 1.25rem;
+}
+.nova-accordion a.card-toggle {
+  color: #212B35;
+  font-weight: normal;
+}
+.nova-accordion a.card-toggle:hover {
+  text-decoration: none;
+}
+.nova-accordion a.card-toggle:hover .svg-inline--fa {
+  color: #47b0df;
+}
+.nova-accordion a.card-toggle .svg-inline--fa {
+  color: #72c3e7;
+}
+
+.feature-item {
+  border-bottom: 1px solid #efefef;
+}
+
+.feature-figure-holder {
+  min-height: 500px;
+}
+
+.feature-item-1 .feature-figure-holder {
+  background: url("../images/feature-figure-1.png") no-repeat center top;
+  background-size: 360px auto;
+}
+
+.feature-item-2 .feature-figure-holder {
+  background: url("../images/feature-figure-2.png") no-repeat center top;
+  background-size: 360px auto;
+}
+
+.feature-item-3 .feature-figure-holder {
+  background: url("../images/feature-figure-3.png") no-repeat center top;
+  background-size: 360px auto;
+}
+
+.feature-quote-profile {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+
+.feature-quote-box {
+  border: 1px solid #efefef;
+}
+.feature-quote-box:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  margin-top: -16px;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-right: 16px solid #fff;
+}
+.feature-quote-box .source {
+  font-size: 0.875rem;
+}
+.feature-quote-box .source-icon {
+  right: 1.5rem;
+  bottom: 1.5rem;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=theme.css.map */
