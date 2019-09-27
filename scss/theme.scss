@@ -75,13 +75,6 @@ $theme-colors: (
   }
 }
 
-.feature-item{border-bottom:1px solid #efefef}
-.feature-figure-holder{min-height:500px}
-
-.feature-item-1 .feature-figure-holder{background:url("../images/feature-figure-1.png") no-repeat center top;background-size:360px auto}
-.feature-item-2 .feature-figure-holder{background:url("../images/feature-figure-2.png") no-repeat center top;background-size:360px auto}
-.feature-item-3 .feature-figure-holder{background:url("../images/feature-figure-3.png") no-repeat center top;background-size:360px auto}
-
 .feature-quote-profile{
   width:60px;height:60px;display:inline-block
 }
@@ -90,6 +83,43 @@ $theme-colors: (
   &:after{
     content:"";display:block;width:0;height:0;position:absolute;left:-16px;top:50%;margin-top:-16px;border-top:16px solid transparent;border-bottom:16px solid transparent;border-right:16px solid #fff;
   }
-  .source{font-size:0.875rem}
-  .source-icon{right:1.5rem;bottom:1.5rem;font-size:1.5rem}
+  .source{font-size:0.875rem;}
+  .source-icon{right:1.5rem;bottom:1.5rem;font-size:1.5rem;}
+}
+
+.member-profile{
+  top:-50px;
+  left:0;
+  img{
+    width:100px;height:100px;
+  }
+}
+.team-section .social-list a:hover{color:#47b0df !important}
+.member-name{font-size:1.25rem;}
+
+.navbar-scrolled{
+  border-bottom: 2px solid #efefef;
+}
+
+.chief-deck{
+  .card{
+    min-width: 210px;
+  }
+}
+
+.staff-deck{
+  .card{
+    min-width: 150px;
+    text-align: center;
+  }
+  .job{
+    margin-bottom: 0.8rem;
+  }
+}
+
+.footer{
+  font-size:0.875rem;
+  .col-heading{font-size:1.25rem}
+  li{margin-bottom:0.5rem}
+  a{color:#526b84}
 }
