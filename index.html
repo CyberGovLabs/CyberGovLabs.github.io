@@ -22,6 +22,66 @@
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
 
+    <style>
+        .pricing-table {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        
+        .pricing-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-table th {
+            background: #5c6ac4;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #4a5ab3;
+        }
+        
+        .pricing-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .pricing-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .pricing-table .plan-name {
+            font-weight: 700;
+            color: #5c6ac4;
+        }
+        
+        .pricing-note {
+            background: #e8eaf6;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        
+        .pricing-note p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 768px) {
+            .pricing-table {
+                font-size: 0.85rem;
+            }
+            
+            .pricing-table th,
+            .pricing-table td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    </style>
+
 </head> 
 
 <body class="pt-5" style="position:relative;" data-spy="scroll" data-target="#mainNav" data-offset="100">
@@ -39,7 +99,7 @@
                             <a class="nav-link tracked" href="#portofolio">Portofolio</a>
                         </li>
                         <li class="nav-item mr-lg-3">
-                            <a class="nav-link tracked" href="#penawaran-jasa">Penawaran Jasa</a>
+                            <a class="nav-link tracked" href="#layanan">Layanan</a>
                         </li>
                         <li class="nav-item mr-lg-3">
                             <a class="nav-link tracked" href="#tentang-kami">Tentang Kami</a>
@@ -148,14 +208,6 @@
 										"Fitur webgrid di Sidalih memungkinan tim entri data Sidalih untuk <em>copas</em> dari Excel. Kecepatannya saat migrasi dari basisdata lama juga sungguh cepat. Beda dengan software-software dari vendor lain." ~ Staf KPU
 									</p>
 								</blockquote>
-								<!--
-								<div class="source">
-									<div><a href="#twitter">James Lee (@JLee)</a></div>
-									<div>App Developer, Startup Hub</div>
-								</div>
-								<div class="source-icon position-absolute">
-									<i class="fab fa-twitter fa-fw"></i>
-								</div> -->
 							</div><!--//quote-box-->
 						</div><!--//feature-quote-->
 					</div>
@@ -173,13 +225,6 @@
 								<blockquote>
 									<p>"Selain karena tampilannya yang bagus, saya takjub dengan terintegrasinya data-data dari K/L ke Krisna. Pekerjaan orang-orang di daerah & Bappenas jadi lebih jauh lebih mudah & cepat." ~ Staf di Bappenas</p>
 								</blockquote>
-								<!--<div class="source">
-									<div><a href="#">Julia Sanders (@juliadev)</a></div>
-									<div>iOS Developer, New York</div>
-								</div> 
-								<div class="source-icon position-absolute">
-									<i class="fab fa-instagram fa-fw"></i>
-								</div> -->
 							</div><!--//quote-box-->
 						</div><!--//feature-quote-->
 					</div>
@@ -192,15 +237,70 @@
 		</div>
 	</section>
 
-	<section id="penawaran-jasa" class="cta-section py-5 theme-bg-secondary text-center">
+	<section id="layanan" class="pricing-section py-5 theme-bg-secondary">
 	    <div class="container">
-		    <h3 class="text-white font-weight-bold mb-3 mt-lg-5">Instansi Pemerintah Anda Butuh Inovasi lewat Software?</h3>
-		    <div class="text-white mx-auto single-col-max-width section-intro">
-				Kami memberikan pelayanan pembuatan software, konsultasi, dan pelatihan. Kami juga terbuka dengan tawaran kerja sama.
+		    <h3 class="text-white font-weight-bold mb-3 text-center mt-lg-5">Paket Layanan</h3>
+		    <div class="text-white mx-auto single-col-max-width section-intro text-center mb-4">
+				Kami menyediakan berbagai paket layanan pengembangan software untuk instansi pemerintahan dengan harga yang kompetitif.
 			</div>
-		    <a class="btn btn-lg theme-btn theme-btn-ghost theme-btn-on-bg mt-4 mb-lg-5" href="mailto:office@cybergl.co.id?subject=Halo CyberGL">Kirim Surel ke office@cybergl.co.id</a>
+		    
+            <div class="pricing-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Paket</th>
+                            <th>Supported Model</th>
+                            <th>Context Window</th>
+                            <th>Paket Token / Credit</th>
+                            <th>Harga (IDR)</th>
+                            <th>Additional Token</th>
+                            <th>Fitur Utama</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="plan-name">Starter</td>
+                            <td>Qwen3-7B, GPT-oss-6B</td>
+                            <td>64K</td>
+                            <td>20.000 Credits</td>
+                            <td>Rp25.000 / bulan</td>
+                            <td>Rp1,5 / Credit</td>
+                            <td>API Access, Dashboard Usage</td>
+                        </tr>
+                        <tr>
+                            <td class="plan-name">Pro</td>
+                            <td>Qwen3-Coder-72B, GPT-oss-13B</td>
+                            <td>128K</td>
+                            <td>100.000 Credits</td>
+                            <td>Rp100.000 / bulan</td>
+                            <td>Rp1 / Credit</td>
+                            <td>RAG Integration (Supabase / Pinecone), Priority Endpoint</td>
+                        </tr>
+                        <tr>
+                            <td class="plan-name">Enterprise</td>
+                            <td>Qwen3-Coder-480B, GPT-oss-120B</td>
+                            <td>256K (Qwen), 128K (GPT)</td>
+                            <td>1.000.000 Credits</td>
+                            <td>Rp750.000 / bulan</td>
+                            <td>Rp0,75 / Credit</td>
+                            <td>Custom Deployment, SLA 99.9%, Fine-tuning Support</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pricing-note">
+                <p><strong>Catatan:</strong></p>
+                <p>• 1 Credit = 1 Token (input atau output)</p>
+                <p>• Harga di atas belum termasuk PPN (jika berlaku)</p>
+                <p>• Paket dapat diperpanjang otomatis setiap bulan melalui sistem langganan Xendit</p>
+            </div>
+
+            <div class="pt-4 text-center">
+		        <a class="btn btn-lg theme-btn theme-btn-ghost theme-btn-on-bg" href="mailto:office@cybergl.co.id?subject=Halo CyberGL - Inquiry Paket Layanan">Kirim Surel ke office@cybergl.co.id</a>
+	        </div>
 	    </div>
-    </section><!--//cta-section-->
+    </section><!--//pricing-section-->
 
 	<section id="tentang-kami" class="team-section py-5 theme-bg-primary">
 		<h3 class="mb-5 text-center font-weight-bold mt-lg-5">Sejarah & Tim Cyber Gov Labs</h3>
@@ -488,4 +588,4 @@
     <script type="text/javascript" src="assets/js/flipster-custom.js"></script>    
 
 </body>
-</html> 
+</html>
